@@ -27,7 +27,6 @@ header figure {
 
 header figure img {
   width: 200px;
-  filter: sepia(1);
 }
 
 header p {
