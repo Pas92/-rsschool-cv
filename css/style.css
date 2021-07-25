@@ -36,3 +36,7 @@ header p {
 header p:first-of-type {
   text-align: right;
 }
+
+main {
+  color: rgb(255, 153, 0);
+}
