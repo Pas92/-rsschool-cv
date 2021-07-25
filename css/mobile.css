@@ -1,0 +1,13 @@
+@media screen and (max-width: 750px) {
+  header * {
+    flex-basis: 400px;
+  }
+
+  header p {
+    text-align: center;
+  }
+
+  header p:first-of-type {
+    text-align: center;
+  }
+}
