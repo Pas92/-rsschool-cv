@@ -69,6 +69,10 @@ section h2::before {
   top: 4px;
 }
 
+section p, section ul {
+  font-size: 18px;
+}
+
 li ul {
   list-style: none;
   padding: 0;
