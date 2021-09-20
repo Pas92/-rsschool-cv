@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobile.css">
 
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   
   <script>hljs.highlightAll();</script>
@@ -27,12 +29,12 @@
   </header>
 
   <main>
-    <section>
+    <section id='about-me-section'>
       <h2>Обо мне</h2>
       <p>На данный момент работаю инженером-конструктором (радиоэлектроника). В процессе переподготовки на веб-разработчика (Front-end в приоритете)</p>
     </section>
 
-    <section>
+    <section id="skills-section">
       <h2>Профессиональные навыки</h2>
       <ul>
         <li>HTML (в т.ч. HTML5)</li>
@@ -42,7 +44,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="code-examples-section">
       <h2>Пример кода</h2>
       <pre><code class="js">
 function indexEqualsValue(a) {
@@ -82,14 +84,14 @@ function indexEqualsValue(a) {
 }</code></pre>
     </section>
 
-    <section>
+    <section id="experience-section">
       <h2>Опыт работы в сфере Front-end</h2>
       <ul>
         <li><a href="https://pas92.github.io/Promo/">Учебный проект </a><a href="https://github.com/Pas92/Promo">Исходник</a></li>
       </ul>
     </section>
 
-    <section>
+    <section id="education-section">
       <h2>Образование</h2>
       <ul>
         <li>
@@ -121,12 +123,12 @@ function indexEqualsValue(a) {
       </ul>
     </section>
 
-    <section>
+    <section id="english-section">
       <h2>Английский</h2>
       <p>На уровне понимания технической документации</p>
     </section>
 
-    <section>
+    <section id="contacts-section">
       <h2>Контакты</h2>
       <ul>
         <li>E-mail: pavelburdovitsin92@gmail.com</li>
@@ -142,5 +144,20 @@ function indexEqualsValue(a) {
     </figure>
     <a href="https://rs.school/js/">RS School</a>
   </footer>
+
+  <div class="burger-menu">
+    <button type="button" class="burger-menu-button material-icons">menu_open</button>
+    <aside>
+      <ul>
+        <li><a href="#about-me-section">Обо мне</a></li>
+        <li><a href="#skills-section">Профессиональные навыки</a></li>
+        <li><a href="#code-examples-section">Примеры кода</a></li>
+        <li><a href="#experience-section">Опыт работы в сфере Front-end</a></li>
+        <li><a href="#education-section">Образование</a></li>
+        <li><a href="#english-section">Английский</a></li>
+        <li><a href="#contacts-section">Контакты</a></li>
+      </ul>
+    </aside>
+  </div>
 </body>
 </html>

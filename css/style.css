@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: auto;
   display: flex;
@@ -98,4 +102,40 @@ footer figure {
 
 footer img {
   height: 36px;
+}
+
+.burger-menu {
+  position: fixed;
+  width: 100%;
+}
+
+.burger-menu button {
+  padding: 0;
+  font-size: 24x;
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 48px;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  align-self: flex-end;
+
+}
+
+.burger-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  font-size: 36px;
+  list-style: none;
+
+  width: 100vw;
+  height: 100vh;
 }
