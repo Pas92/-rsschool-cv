@@ -1,4 +1,16 @@
 @media screen and (max-width: 750px) {
+  html {
+    scroll-snap-type: block mandatory;
+  }
+
+  header, main, footer {
+    scroll-snap-align: start;
+  }
+
+  header {
+    height: 100vh;
+  }
+
   header * {
     flex-basis: 400px;
   }
@@ -14,7 +26,7 @@
   main {
     height: 100vh;
     overflow: auto;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: block proximity;
   }
 
   section {
@@ -25,11 +37,22 @@
     font-size: 18px;
   }
 
+  section h2::before {
+    width: 24px;
+    height: 24px;
+    left: -32px;
+    top: 2px;
+  }
+
   section p, section ul {
     font-size: 12px;
   }
 
   pre code.hljs {
     font-size: 11px;
+  }
+
+  .burger-menu ul {
+    font-size: 18px;
   }
 }

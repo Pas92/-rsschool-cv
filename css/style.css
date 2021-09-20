@@ -94,6 +94,12 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   background-color: rgb(255, 153, 0);
+
+
+}
+
+footer a, footer a:hover {
+  color: #212529;
 }
 
 footer figure {
@@ -112,25 +118,51 @@ footer img {
 .burger-menu button {
   padding: 0;
   font-size: 24x;
+  color: rgb(255, 153, 0);
   width: 48px;
   height: 48px;
+  z-index: 5;
 
   border: none;
   border-radius: 48px;
+  background: #212529;
 
   position: absolute;
   top: 24px;
   right: 24px;
 
-  align-self: flex-end;
+  filter: drop-shadow(0 0 2px #4a535c);
+  transition: filter 0.2s linear, color 0.2s linear;
+}
 
+.burger-menu button:hover {
+  background: rgb(52, 57, 61);
+  filter: drop-shadow(0 2px 2px #4a535c);
+  cursor: pointer;
+}
+
+.burger-menu button:active {
+  filter: drop-shadow(0 1px 1px #4a535c);
+}
+
+.burger-menu button:focus {
+  outline: none;
 }
 
 .burger-menu aside {
-  display: none;
+  position: fixed;
+  visibility: hidden;
+  left: 100vw;
+  width: calc(100vw - 16px);
+  height: 100vh;
+  opacity: 0;
+  background-color: #212529ee;
+
+  transition: visibility 0.3s,  opacity 0.3s ease-in-out;
 }
 
 .burger-menu ul {
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,6 +172,11 @@ footer img {
   font-size: 36px;
   list-style: none;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
+
+.burger-menu ul li a {
+  color:  rgb(255, 153, 0);
+}
+
