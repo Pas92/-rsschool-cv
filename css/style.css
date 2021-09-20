@@ -126,6 +126,10 @@ footer img {
 
 }
 
+.burger-menu aside {
+  display: none;
+}
+
 .burger-menu ul {
   display: flex;
   flex-direction: column;
