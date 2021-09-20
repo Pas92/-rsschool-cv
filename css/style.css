@@ -39,6 +39,7 @@ header p:first-of-type {
 
 main {
   color: rgb(255, 153, 0);
+  width: 100%;
 }
 
 section {
@@ -71,6 +72,10 @@ section h2::before {
 li ul {
   list-style: none;
   padding: 0;
+}
+
+pre code.hljs {
+  background-color: #2c3136;
 }
 
 footer {

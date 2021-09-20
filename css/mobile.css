@@ -11,11 +11,5 @@
     text-align: center;
   }
 
-  main {
-    scroll-snap-type: y mandatory;
-  }
-
-  main section {
-    scroll-snap-align: start;
-  }
+  
 }
